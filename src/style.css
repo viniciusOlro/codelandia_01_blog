@@ -1,0 +1,152 @@
+/* CSS RESETS */
+
+:root {
+  font-size: 62.5%;
+
+  --purple: #574ae8;
+  --gradient-default: linear-gradient(to right, #574AE8, #3EA1DB);
+  --white: #fff;
+  --white-200: #f9f9f9;
+  --gray: #717171;
+  --gray-dark: #1A202C;
+}
+
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: 'Lexend Deca', sans-serif;
+  background-color: var(--white-200);
+}
+
+.container {
+  width: 90%;
+  max-width: 90rem;
+  margin: 0 auto;
+}
+
+h1, h2 {
+  font-weight: 400;
+  font-size: inherit;
+}
+
+input {
+  outline: none;
+  border: none;
+}
+
+/* HEADER */
+
+header {
+  background: var(--gradient-default);
+  height: 38.6vh;
+}
+
+header .container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: space-around;
+}
+
+header .container div:first-child {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  color: var(--white);
+  font-size: 2.4rem;
+}
+
+/* HEADER SEARCH */
+
+header .container div:last-child {
+  position: relative;
+}
+
+header .container div:last-child input {
+  width: 100%;
+  height: 6rem;
+  border-radius: .5rem;
+  background-color: rgba(255, 255, 255, .2);
+  position: relative;
+  padding-left: 4rem;
+  color: var(--white);
+}
+
+header .container div:last-child input::placeholder {
+  font-family: 'Inter', sans-serif;
+  font-size: 1.4rem;
+  color: rgba(255, 255, 255, .2);
+  font-weight: 500;
+  position: relative;
+}
+
+header .container div:last-child span {
+  position: absolute;
+  top: 2.2rem;
+  left: 1.2rem;
+  color: var(--white);
+}
+
+header .container div:last-child span img {
+  width: 1.7rem;
+}
+
+/* CARDS */
+
+main {
+  margin: 10rem 0;
+}
+
+main .container {
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+}
+
+main .container .card {
+  background-color: var(--white);
+  box-shadow: 0px 0px 10px 0px rgba(19, 19, 31, 0.05);
+  padding: 2.5rem;
+  border-radius: .5rem;
+
+}
+
+.card h2 {
+  font-size: 2.6rem;
+  line-height: 3.25rem;
+  padding: 1.5rem 0;
+  color: var(--gray-dark);
+}
+
+.card p {
+  color: var(--gray);
+}
+
+.card div:first-child {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card .date {
+  font-size: 1.4rem;
+  color: var(--gray);
+}
+
+.card .like:hover {
+  cursor: pointer;
+}
+
+/* RESPONSIVE */
+
+@media screen and (max-width: 426px) {
+  :root {
+    font-size: 50%;
+  }
+}
