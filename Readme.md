@@ -5,7 +5,7 @@ Tenho como objetivo conciliar minhas skills como desenvolvedor front-end, tanto 
 
 ## Resultados
 
-Protótipo                  |  Resultado final
+Resultado final            | Protótipo
 :-------------------------:|:-------------------------:
 ![image](https://i.imgur.com/ngcpEwW.png)  |  ![image](https://i.imgur.com/4XsmSnw.png)
 
